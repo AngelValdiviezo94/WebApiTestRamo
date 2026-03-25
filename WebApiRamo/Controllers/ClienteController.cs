@@ -44,6 +44,34 @@ namespace WebApiRamo.Controllers
             return LstClientes;
         }
 
+        [HttpGet]
+        [Route("ConsultaClienteById")]
+        public cl_Cliente ConsultaClienteById(int Id)
+        {
+            cl_Cliente ClProducto = new cl_Cliente();
+            DataTable dataTable = new DataTable();
+            RespuestaModelo respuestaModelo = new RespuestaModelo();
+            try
+            {
+                dataTable = this.MetCliente.ConsultaClienteById(Id.ToString());
+                if (dataTable.Rows.Count <= 0)
+                {
+                    respuestaModelo.ProcesoExitoso = false;
+                }
+                else
+                {
+                    respuestaModelo.ProcesoExitoso = true;
+                    ConversionClase ObjConversionClase = new ConversionClase();
+                    ClProducto = ObjConversionClase.ObjCliente(dataTable);
+                }
+            }
+            catch (Exception ex)
+            {
+                ClProducto = null;
+            }
+            return ClProducto;
+        }
+
         [HttpPost]
         [Route("GuardaCliente")]
         public int GuardaCliente(List<cl_Cliente> lstClientes)

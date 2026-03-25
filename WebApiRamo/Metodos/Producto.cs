@@ -31,6 +31,26 @@ namespace WebApiRamo.Metodos
             return dataTable;
         }
 
+        public DataTable ConsultaProductoById(string IdProd)
+        {
+            DataTable dataTable;
+            DataTable dataTable1 = new DataTable();
+            try
+            {
+                ClsAccesoDatos clsAccesoDato = new ClsAccesoDatos();
+                XmlDocument xmlDocument = new XmlDocument();
+                clsAccesoDato.ProcedimientoAlmacenado = "[dbo].[Consulta_Producto_ById_Ramo]";
+                xmlDocument.LoadXml("<Respuesta />");
+                clsAccesoDato.AgregarParametro("@IdProducto", SqlDbType.NVarChar, IdProd);
+                dataTable = clsAccesoDato.ConsultarDataTable();
+            }
+            catch (Exception exception)
+            {
+                throw new Exception(exception.Message);
+            }
+            return dataTable;
+        }
+
         public int GuardaListaProductos(List<cl_Producto> LstClientes, ref string numError, ref string msgError)
         {
             int num = 0;

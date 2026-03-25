@@ -29,6 +29,27 @@ namespace WebApiRamo.Metodos
             return dataTable;
         }
 
+        public DataTable ConsultaClienteById(string IdCli)
+        {
+            DataTable dataTable;
+            DataTable dataTable1 = new DataTable();
+            try
+            {
+                ClsAccesoDatos clsAccesoDato = new ClsAccesoDatos();
+                XmlDocument xmlDocument = new XmlDocument();
+                clsAccesoDato.ProcedimientoAlmacenado = "[dbo].[Consulta_Cliente_ById_Ramo]";
+                xmlDocument.LoadXml("<Respuesta />");
+                clsAccesoDato.AgregarParametro("@IdCliente", SqlDbType.NVarChar, IdCli);
+                dataTable = clsAccesoDato.ConsultarDataTable();
+            }
+            catch (Exception exception)
+            {
+                throw new Exception(exception.Message);
+            }
+            return dataTable;
+        }
+
+
         public int GuardaListaClientes(List<cl_Cliente> LstClientes, ref string numError, ref string msgError)
         {
             int num = 0;
