@@ -1,0 +1,6 @@
+C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\bin\Debug\Datos.dll
+C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\bin\Debug\Datos.pdb
+C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\obj\Debug\Datos.dll
+C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\obj\Debug\Datos.pdb
