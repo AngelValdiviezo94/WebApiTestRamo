@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccesoDatos", "AccesoDatos\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiRamo", "WebApiRamo\WebApiRamo.csproj", "{7591C08E-F621-482D-8140-627136A1F556}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{C687FC33-0686-4E79-9DEB-A86F4FB24A4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{7591C08E-F621-482D-8140-627136A1F556}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7591C08E-F621-482D-8140-627136A1F556}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7591C08E-F621-482D-8140-627136A1F556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C687FC33-0686-4E79-9DEB-A86F4FB24A4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C687FC33-0686-4E79-9DEB-A86F4FB24A4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C687FC33-0686-4E79-9DEB-A86F4FB24A4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C687FC33-0686-4E79-9DEB-A86F4FB24A4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{21100FBF-772E-4694-992F-F46F369E37D8} = {713B183A-05E1-4C3B-A83B-34D2154BC003}
 		{67BF1BDD-451C-4D97-8FBF-72C6206EEC70} = {713B183A-05E1-4C3B-A83B-34D2154BC003}
 		{7591C08E-F621-482D-8140-627136A1F556} = {BB6D4550-D1BC-44C0-BC0D-F038B24E309E}
+		{C687FC33-0686-4E79-9DEB-A86F4FB24A4F} = {713B183A-05E1-4C3B-A83B-34D2154BC003}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0F08BC55-0879-469F-A48B-147213E60E64}

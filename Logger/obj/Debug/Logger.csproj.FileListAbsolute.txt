@@ -1,0 +1,6 @@
+C:\ProyectosAngel\WebApiRamos\Logger\bin\Debug\Logger.dll
+C:\ProyectosAngel\WebApiRamos\Logger\bin\Debug\Logger.pdb
+C:\ProyectosAngel\WebApiRamos\Logger\obj\Debug\Logger.csproj.AssemblyReference.cache
+C:\ProyectosAngel\WebApiRamos\Logger\obj\Debug\Logger.csproj.CoreCompileInputs.cache
+C:\ProyectosAngel\WebApiRamos\Logger\obj\Debug\Logger.dll
+C:\ProyectosAngel\WebApiRamos\Logger\obj\Debug\Logger.pdb

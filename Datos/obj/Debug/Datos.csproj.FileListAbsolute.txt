@@ -4,3 +4,9 @@ C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\obj\Debug\Datos.csproj.AssemblyR
 C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\obj\Debug\Datos.dll
 C:\ProyectosAngel\ApiTestRamo\SlnTestRamo\Datos\obj\Debug\Datos.pdb
+C:\ProyectosAngel\WebApiRamos\Datos\bin\Debug\Datos.dll
+C:\ProyectosAngel\WebApiRamos\Datos\bin\Debug\Datos.pdb
+C:\ProyectosAngel\WebApiRamos\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\ProyectosAngel\WebApiRamos\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\ProyectosAngel\WebApiRamos\Datos\obj\Debug\Datos.dll
+C:\ProyectosAngel\WebApiRamos\Datos\obj\Debug\Datos.pdb

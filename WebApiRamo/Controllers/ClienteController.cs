@@ -3,9 +3,6 @@ using Datos;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using WebApiRamo.Metodos;
 using WebApiRamo.Utilities;
@@ -16,6 +13,7 @@ namespace WebApiRamo.Controllers
     public class ClienteController : ApiController
     {
         Cliente MetCliente = new Cliente();
+        private ConversionClase metodoGenerico = new ConversionClase();
 
         [HttpGet]
         [Route("ConsultaClientes")]
@@ -47,8 +45,8 @@ namespace WebApiRamo.Controllers
         }
 
         [HttpPost]
-        [Route("AsistenciaIntegrantesCelula")]
-        public int GuardaAsistenciaIntegrantesCelula(List<cl_Cliente> lstClientes)
+        [Route("GuardaCliente")]
+        public int GuardaCliente(List<cl_Cliente> lstClientes)
         {
             string empty = string.Empty;
             string str = string.Empty;
@@ -64,6 +62,47 @@ namespace WebApiRamo.Controllers
             return num;
         }
 
+        [HttpPost]
+        [Route("ModificaCliente")]
+        public RespuestaModelo ModificaCliente(cl_Cliente objGDA)
+        {
+            string empty = string.Empty;
+            string str = string.Empty;
+            RespuestaModelo respuestaModelo = new RespuestaModelo();
+            int num = 0;
+            try
+            {
+                num = this.MetCliente.ModificaCliente(objGDA, ref str, ref empty);
+                respuestaModelo.ProcesoExitoso = true;
+                respuestaModelo.Respuesta.Add(num);
+            }
+            catch (Exception exception)
+            {
+                this.metodoGenerico.LlenaRespuestaModeloError(exception);
+            }
+            return respuestaModelo;
+        }
+
+        [HttpPost]
+        [Route("EliminaCliente")]
+        public RespuestaModelo EliminaCliente(int idCliente)
+        {
+            string empty = string.Empty;
+            string str = string.Empty;
+            RespuestaModelo respuestaModelo = new RespuestaModelo();
+            int num = 0;
+            try
+            {
+                num = this.MetCliente.EliminaCliente(idCliente, ref str, ref empty);
+                respuestaModelo.ProcesoExitoso = true;
+                respuestaModelo.Respuesta.Add(num);
+            }
+            catch (Exception exception)
+            {
+                this.metodoGenerico.LlenaRespuestaModeloError(exception);
+            }
+            return respuestaModelo;
+        }
 
     }
 }

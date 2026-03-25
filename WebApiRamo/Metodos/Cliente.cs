@@ -77,5 +77,76 @@ namespace WebApiRamo.Metodos
             return num;
         }
 
+        public int ModificaCliente(cl_Cliente ObjCliente, ref string NumError, ref string MsgError)
+        {
+            int num = 0;
+            ClsAccesoDatos clsAccesoDato = new ClsAccesoDatos();
+            XmlDocument xmlDocument = new XmlDocument();
+            try
+            {
+                using (SqlCommand sqlCommand = ClsConexion.CrearConexion())
+                {
+                    clsAccesoDato.ProcedimientoAlmacenado = "[dbo].[Edita_Cliente_Ramo]";
+                    xmlDocument.LoadXml("<Peticion />");
+                    xmlDocument.DocumentElement.SetAttribute("IdCliente", ObjCliente.Id.ToString() ?? "");
+                    xmlDocument.DocumentElement.SetAttribute("Nombres", ObjCliente.Nombres);
+                    xmlDocument.DocumentElement.SetAttribute("Apellidos", ObjCliente.Apellidos);
+                    xmlDocument.DocumentElement.SetAttribute("RazonSocial", ObjCliente.RazonSocial);
+                    xmlDocument.DocumentElement.SetAttribute("Direccion", ObjCliente.Direccion);
+                    xmlDocument.DocumentElement.SetAttribute("Email", ObjCliente.Email);
+                    xmlDocument.DocumentElement.SetAttribute("Telefono", ObjCliente.Telefono);
+                    xmlDocument.DocumentElement.SetAttribute("UsuarioModificacion", ObjCliente.UsuarioModificacion);
+
+                    clsAccesoDato.AgregarParametro("@PI_ParamXML", SqlDbType.Xml, xmlDocument.OuterXml);
+                    clsAccesoDato.AgregarParametroDeSalida("@MsgError", SqlDbType.VarChar, 500);
+                    clsAccesoDato.AgregarParametroDeSalida("@NumError", SqlDbType.Int, 4);
+                    int num1 = clsAccesoDato.Ejecutar();
+                    MsgError = clsAccesoDato.LeerParametroDeSalida("@MsgError").Trim();
+                    NumError = clsAccesoDato.LeerParametroDeSalida("@NumError").Trim();
+                    num = num1;
+                }
+            }
+            catch (Exception exception1)
+            {
+                Exception exception = exception1;
+                MsgError = exception.Message;
+                exception.ToString();
+                num = 0;
+            }
+            return num;
+        }
+
+        public int EliminaCliente(int idCliente, ref string NumError, ref string MsgError)
+        {
+            int num = 0;
+            ClsAccesoDatos clsAccesoDato = new ClsAccesoDatos();
+            XmlDocument xmlDocument = new XmlDocument();
+            try
+            {
+                using (SqlCommand sqlCommand = ClsConexion.CrearConexion())
+                {
+                    clsAccesoDato.ProcedimientoAlmacenado = "[dbo].[Elimina_Cliente_Ramo]";
+                    xmlDocument.LoadXml("<Peticion />");
+                    xmlDocument.DocumentElement.SetAttribute("IdCliente", idCliente.ToString() ?? "0");
+                    
+                    clsAccesoDato.AgregarParametro("@PI_ParamXML", SqlDbType.Xml, xmlDocument.OuterXml);
+                    clsAccesoDato.AgregarParametroDeSalida("@MsgError", SqlDbType.VarChar, 500);
+                    clsAccesoDato.AgregarParametroDeSalida("@NumError", SqlDbType.Int, 4);
+                    int num1 = clsAccesoDato.Ejecutar();
+                    MsgError = clsAccesoDato.LeerParametroDeSalida("@MsgError").Trim();
+                    NumError = clsAccesoDato.LeerParametroDeSalida("@NumError").Trim();
+                    num = num1;
+                }
+            }
+            catch (Exception exception1)
+            {
+                Exception exception = exception1;
+                MsgError = exception.Message;
+                exception.ToString();
+                num = 0;
+            }
+            return num;
+        }
+
     }
 }

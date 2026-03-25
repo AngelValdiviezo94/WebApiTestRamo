@@ -158,11 +158,13 @@
     <Compile Include="ClsConexion.cs" />
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductoController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Metodos\Cliente.cs" />
+    <Compile Include="Metodos\Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\ConversionClase.cs" />
   </ItemGroup>
@@ -236,6 +238,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Cliente\" />
+    <Folder Include="Views\Producto\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\bootstrap.min.js.map" />
@@ -316,6 +319,10 @@
     <ProjectReference Include="..\Datos\Datos.csproj">
       <Project>{21100fbf-772e-4694-992f-f46f369e37d8}</Project>
       <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{c687fc33-0686-4e79-9deb-a86f4fb24a4f}</Project>
+      <Name>Logger</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

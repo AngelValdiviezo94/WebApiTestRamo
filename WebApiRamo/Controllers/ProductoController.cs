@@ -1,0 +1,108 @@
+﻿using Datos;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Web.Http;
+using WebApiRamo.Metodos;
+using WebApiRamo.Utilities;
+
+
+namespace WebApiRamo.Controllers
+{
+    [RoutePrefix("api/Producto")]
+    public class ProductoController : ApiController
+    {
+        Producto MetCliente = new Producto();
+        private ConversionClase metodoGenerico = new ConversionClase();
+
+        [HttpGet]
+        [Route("ConsultaProductos")]
+        public List<cl_Producto> Obten_Clientes()
+        {
+            List<cl_Producto> LstClientes = new List<cl_Producto>();
+            cl_Producto clCanton = new cl_Producto();
+            DataTable dataTable = new DataTable();
+            RespuestaModelo respuestaModelo = new RespuestaModelo();
+            try
+            {
+                dataTable = this.MetCliente.ConsultaProductos();
+                if (dataTable.Rows.Count <= 0)
+                {
+                    respuestaModelo.ProcesoExitoso = false;
+                }
+                else
+                {
+                    respuestaModelo.ProcesoExitoso = true;
+                    ConversionClase ObjConversionClase = new ConversionClase();
+                    LstClientes = ObjConversionClase.ListaProductos(dataTable);
+                }
+            }
+            catch (Exception ex)
+            {
+                LstClientes = null;
+            }
+            return LstClientes;
+        }
+
+        [HttpPost]
+        [Route("GuardaProductos")]
+        public int GuardaProducto(List<cl_Producto> lstClientes)
+        {
+            string empty = string.Empty;
+            string str = string.Empty;
+            int num = 0;
+            try
+            {
+                num = this.MetCliente.GuardaListaProductos(lstClientes, ref str, ref empty);
+            }
+            catch (Exception exception)
+            {
+                num = -1;
+            }
+            return num;
+        }
+
+        [HttpPost]
+        [Route("ModificaProductos")]
+        public RespuestaModelo ModificaProducto(cl_Producto objGDA)
+        {
+            string empty = string.Empty;
+            string str = string.Empty;
+            RespuestaModelo respuestaModelo = new RespuestaModelo();
+            int num = 0;
+            try
+            {
+                num = this.MetCliente.ModificaProducto(objGDA, ref str, ref empty);
+                respuestaModelo.ProcesoExitoso = true;
+                respuestaModelo.Respuesta.Add(num);
+            }
+            catch (Exception exception)
+            {
+                this.metodoGenerico.LlenaRespuestaModeloError(exception);
+            }
+            return respuestaModelo;
+        }
+
+        [HttpPost]
+        [Route("EliminaProducto")]
+        public RespuestaModelo EliminaProducto(int idCliente)
+        {
+            string empty = string.Empty;
+            string str = string.Empty;
+            RespuestaModelo respuestaModelo = new RespuestaModelo();
+            int num = 0;
+            try
+            {
+                num = this.MetCliente.EliminaProducto(idCliente, ref str, ref empty);
+                respuestaModelo.ProcesoExitoso = true;
+                respuestaModelo.Respuesta.Add(num);
+            }
+            catch (Exception exception)
+            {
+                this.metodoGenerico.LlenaRespuestaModeloError(exception);
+            }
+            return respuestaModelo;
+        }
+
+    }
+}
