@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "C:\\ProyectosAngel\\WebApiRamos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|C:\\ProyectosAngel\\WebApiRamos\\webapiramo\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|c:\\proyectosangel\\webapiramos\\webapiramo\\metodos\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\metodos\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|c:\\proyectosangel\\webapiramos\\webapiramo\\metodos\\tipoidentificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\metodos\\tipoidentificacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|c:\\proyectosangel\\webapiramos\\webapiramo\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\controllers\\carritocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|C:\\ProyectosAngel\\WebApiRamos\\webapiramo\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|c:\\proyectosangel\\webapiramos\\webapiramo\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|C:\\ProyectosAngel\\WebApiRamos\\webapiramo\\utilities\\conversionclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\utilities\\conversionclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|C:\\ProyectosAngel\\WebApiRamos\\webapiramo\\metodos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\metodos\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|c:\\proyectosangel\\webapiramos\\webapiramo\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|c:\\proyectosangel\\webapiramos\\webapiramo\\metodos\\tipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\metodos\\tipoproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|C:\\ProyectosAngel\\WebApiRamos\\webapiramo\\metodos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\metodos\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|C:\\ProyectosAngel\\WebApiRamos\\webapiramo\\utilities\\conversionclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7591C08E-F621-482D-8140-627136A1F556}|WebApiRamo\\WebApiRamo.csproj|solutionrelative:webapiramo\\utilities\\conversionclase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 35,
+          "SelectedChildIndex": 34,
           "Children": [
             {
               "$type": "Bookmark",
@@ -170,64 +186,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\Carrito.cs",
+              "RelativeDocumentMoniker": "WebApiRamo\\Metodos\\Carrito.cs",
+              "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\Carrito.cs*",
+              "RelativeToolTip": "WebApiRamo\\Metodos\\Carrito.cs*",
+              "ViewState": "AgIAACIAAAAAAAAAAAAjwC8AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T15:47:33.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarritoController.cs",
+              "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Controllers\\CarritoController.cs",
+              "RelativeDocumentMoniker": "WebApiRamo\\Controllers\\CarritoController.cs",
+              "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Controllers\\CarritoController.cs",
+              "RelativeToolTip": "WebApiRamo\\Controllers\\CarritoController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwDgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T15:42:52.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TipoIdentificacion.cs",
+              "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\TipoIdentificacion.cs",
+              "RelativeDocumentMoniker": "WebApiRamo\\Metodos\\TipoIdentificacion.cs",
+              "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\TipoIdentificacion.cs",
+              "RelativeToolTip": "WebApiRamo\\Metodos\\TipoIdentificacion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T13:05:11.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TipoProducto.cs",
+              "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\TipoProducto.cs",
+              "RelativeDocumentMoniker": "WebApiRamo\\Metodos\\TipoProducto.cs",
+              "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\TipoProducto.cs",
+              "RelativeToolTip": "WebApiRamo\\Metodos\\TipoProducto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T12:29:41.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\Producto.cs",
               "RelativeDocumentMoniker": "WebApiRamo\\Metodos\\Producto.cs",
               "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\Producto.cs",
               "RelativeToolTip": "WebApiRamo\\Metodos\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAD4vw4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T19:18:40.379Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ProductoController.cs",
               "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Controllers\\ProductoController.cs",
               "RelativeDocumentMoniker": "WebApiRamo\\Controllers\\ProductoController.cs",
               "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Controllers\\ProductoController.cs",
               "RelativeToolTip": "WebApiRamo\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAwwIAAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwEoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T19:13:20.968Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ConversionClase.cs",
               "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Utilities\\ConversionClase.cs",
               "RelativeDocumentMoniker": "WebApiRamo\\Utilities\\ConversionClase.cs",
               "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Utilities\\ConversionClase.cs",
               "RelativeToolTip": "WebApiRamo\\Utilities\\ConversionClase.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAArwAsAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAcwKwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T18:59:24.093Z"
+              "WhenOpened": "2026-03-25T18:59:24.093Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\Cliente.cs",
               "RelativeDocumentMoniker": "WebApiRamo\\Metodos\\Cliente.cs",
               "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Metodos\\Cliente.cs",
               "RelativeToolTip": "WebApiRamo\\Metodos\\Cliente.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAQwI0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T18:38:10.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "WebApiRamo\\Controllers\\ClienteController.cs",
               "ToolTip": "C:\\ProyectosAngel\\WebApiRamos\\WebApiRamo\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "WebApiRamo\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAowHQAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowF4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-25T18:52:19.151Z",
               "EditorCaption": ""

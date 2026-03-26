@@ -23,10 +23,12 @@ namespace WebApiRamo.Utilities
                 ObjCliente.RazonSocial = row["RazonSocial"].ToString();
                 ObjCliente.Fecha_Nacimiento = Convert.ToDateTime(row["FechaNacimiento"].ToString());
                 ObjCliente.NumIdentificacion = row["NumIdentificacion"].ToString();
+                ObjCliente.IdTipoIdentificacion = Convert.ToInt16(row["Id_TipoIdentificacion"].ToString());
+                ObjCliente.EstadoCivil = Convert.ToInt16(row["EstadoCivil"].ToString());
                 ObjCliente.Telefono = row["Telefono"].ToString();
                 ObjCliente.Direccion = row["Direccion"].ToString();
                 ObjCliente.Email = row["Email"].ToString();
-                ObjCliente.TendenciaCompra = row["TendenciaCompra"].ToString();
+                ObjCliente.TendenciaCompra = Convert.ToInt16(row["TendenciaCompra"].ToString());
             }
 
             return ObjCliente;
@@ -49,7 +51,8 @@ namespace WebApiRamo.Utilities
                 ObjCliente.Telefono = row["Telefono"].ToString();
                 ObjCliente.Direccion = row["Direccion"].ToString();
                 ObjCliente.Email = row["Email"].ToString();
-                ObjCliente.TendenciaCompra = row["TendenciaCompra"].ToString();
+                ObjCliente.TendenciaCompra = Convert.ToInt16(row["TendenciaCompra"].ToString());
+                //ObjCliente.EstadoCivil = Convert.ToInt16(row["EstadoCivil"].ToString());
 
                 LstClientes.Add(ObjCliente);
                 ObjCliente = new cl_Cliente();
@@ -79,7 +82,7 @@ namespace WebApiRamo.Utilities
 
             return ObjCliente;
         }
-
+        
         public List<cl_Producto> ListaProductos(DataTable dataTable)
         {
             cl_Producto ObjCliente = new cl_Producto();
@@ -103,6 +106,91 @@ namespace WebApiRamo.Utilities
             return LstClientes;
         }
         #endregion
+
+        #region Tipo Producto
+        
+        public List<cl_Tipo_Producto> ListaTipoProducto(DataTable dataTable)
+        {
+            cl_Tipo_Producto ObjCliente = new cl_Tipo_Producto();
+            List<cl_Tipo_Producto> LstClientes = new List<cl_Tipo_Producto>();
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                ObjCliente.Id = Convert.ToInt16(row["Id"].ToString());
+                ObjCliente.Nombre = row["Nombre"].ToString();
+                //ObjCliente.Activo = Convert.ToBoolean(row["Codigo"].ToString());
+                
+                LstClientes.Add(ObjCliente);
+                ObjCliente = new cl_Tipo_Producto();
+            }
+
+            return LstClientes;
+        }
+        #endregion
+
+        #region Tipo Identificación
+
+        public List<cl_Tipo_Identificacion> ListaTipoIdentificacion(DataTable dataTable)
+        {
+            cl_Tipo_Identificacion ObjCliente = new cl_Tipo_Identificacion();
+            List<cl_Tipo_Identificacion> LstClientes = new List<cl_Tipo_Identificacion>();
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                ObjCliente.Id = Convert.ToInt16(row["Id"].ToString());
+                ObjCliente.Nombre = row["Descripcion"].ToString();
+                //ObjCliente.Activo = Convert.ToBoolean(row["Codigo"].ToString());
+
+                LstClientes.Add(ObjCliente);
+                ObjCliente = new cl_Tipo_Identificacion();
+            }
+
+            return LstClientes;
+        }
+        #endregion
+
+        #region Estado Civil
+
+        public List<cl_EstadoCivil> ListaEstadoCivil(DataTable dataTable)
+        {
+            cl_EstadoCivil ObjCliente = new cl_EstadoCivil();
+            List<cl_EstadoCivil> LstClientes = new List<cl_EstadoCivil>();
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                ObjCliente.Id = Convert.ToInt16(row["Id"].ToString());
+                ObjCliente.Nombre = row["Descripcion"].ToString();
+                //ObjCliente.Activo = Convert.ToBoolean(row["Codigo"].ToString());
+
+                LstClientes.Add(ObjCliente);
+                ObjCliente = new cl_EstadoCivil();
+            }
+
+            return LstClientes;
+        }
+        #endregion
+
+        /*
+        #region Carrito 
+        public List<cl_Carrito> ListaCarrito(DataTable dataTable)
+        {
+            cl_Carrito ObjCliente = new cl_Carrito();
+            List<cl_Carrito> LstClientes = new List<cl_Carrito>();
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                ObjCliente.Id = Convert.ToInt16(row["Id"].ToString());
+                //ObjCliente.Nombre = row["Nombre"].ToString();
+                //ObjCliente.Activo = Convert.ToBoolean(row["Codigo"].ToString());
+
+                LstClientes.Add(ObjCliente);
+                ObjCliente = new cl_Carrito();
+            }
+
+            return LstClientes;
+        }
+        #endregion
+        */
 
         public void RegistraLogError(Exception excepcion)
         {

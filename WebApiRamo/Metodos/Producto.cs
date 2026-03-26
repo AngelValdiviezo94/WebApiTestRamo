@@ -132,7 +132,7 @@ namespace WebApiRamo.Metodos
             return num;
         }
 
-        public int EliminaProducto(int IdProducto, ref string NumError, ref string MsgError)
+        public int EliminaProducto(cl_Producto ObjProducto, ref string NumError, ref string MsgError)
         {
             int num = 0;
             ClsAccesoDatos clsAccesoDato = new ClsAccesoDatos();
@@ -143,7 +143,8 @@ namespace WebApiRamo.Metodos
                 {
                     clsAccesoDato.ProcedimientoAlmacenado = "[dbo].[Elimina_Producto_Ramo]";
                     xmlDocument.LoadXml("<Peticion />");
-                    xmlDocument.DocumentElement.SetAttribute("IdProducto", IdProducto.ToString() ?? "0");
+                    xmlDocument.DocumentElement.SetAttribute("IdProducto", ObjProducto.Id.ToString() ?? "0");
+                    xmlDocument.DocumentElement.SetAttribute("UsuarioModificacion", ObjProducto.UsuarioModificacion);
 
                     clsAccesoDato.AgregarParametro("@PI_ParamXML", SqlDbType.Xml, xmlDocument.OuterXml);
                     clsAccesoDato.AgregarParametroDeSalida("@MsgError", SqlDbType.VarChar, 500);

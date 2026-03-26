@@ -73,10 +73,10 @@ namespace WebApiRamo.Metodos
                         xmlElement.SetAttribute("Email", objClient.Email);
                         xmlElement.SetAttribute("IdTipoIdentificacion", objClient.IdTipoIdentificacion + "");
                         xmlElement.SetAttribute("FechaNacimiento", objClient.Fecha_Nacimiento.ToString("yyyy-MM-dd"));
-                        xmlElement.SetAttribute("TendenciaCompra", objClient.TendenciaCompra);
+                        xmlElement.SetAttribute("TendenciaCompra", objClient.TendenciaCompra + "");
                         xmlElement.SetAttribute("Telefono", objClient.Telefono);
                         xmlElement.SetAttribute("UsuarioCreacion", objClient.UsuarioCreacion);
-                        xmlElement.SetAttribute("EstadoCivil", objClient.EstadoCivil);
+                        xmlElement.SetAttribute("EstadoCivil", objClient.EstadoCivil + "");
                         
                         xmlDocument.DocumentElement.AppendChild(xmlElement);
                     }

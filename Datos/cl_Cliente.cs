@@ -24,9 +24,9 @@ namespace Datos
         
         public string Email { get; set; }
 
-        public string EstadoCivil { get; set; }
+        public int EstadoCivil { get; set; }
         
-        public string TendenciaCompra { get; set; }
+        public int TendenciaCompra { get; set; }
         
         public string UsuarioCreacion { get; set; }
 

@@ -6,7 +6,6 @@ using System.Web.Http;
 using WebApiRamo.Metodos;
 using WebApiRamo.Utilities;
 
-
 namespace WebApiRamo.Controllers
 {
     [RoutePrefix("api/Producto")]
@@ -112,17 +111,18 @@ namespace WebApiRamo.Controllers
             return respuestaModelo;
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("EliminaProducto")]
-        public RespuestaModelo EliminaProducto(int idProducto)
+        public RespuestaModelo EliminaProducto(cl_Producto ObjProducto)
         {
             string empty = string.Empty;
             string str = string.Empty;
             RespuestaModelo respuestaModelo = new RespuestaModelo();
             int num = 0;
+
             try
             {
-                num = this.MetCliente.EliminaProducto(idProducto, ref str, ref empty);
+                num = this.MetCliente.EliminaProducto(ObjProducto, ref str, ref empty);
                 respuestaModelo.ProcesoExitoso = true;
                 respuestaModelo.Respuesta.Add(num);
             }
