@@ -9,7 +9,8 @@ namespace WebApiRamo.Metodos
 {
     public class Carrito
     {
-        public DataTable ConsultaCarrito()
+
+        public DataTable ConsultaCarrito(int Id)
         {
             DataTable dataTable;
             DataTable dataTable1 = new DataTable();
@@ -19,6 +20,7 @@ namespace WebApiRamo.Metodos
                 XmlDocument xmlDocument = new XmlDocument();
                 clsAccesoDato.ProcedimientoAlmacenado = "[dbo].[Consulta_Carrito_Ramo]";
                 xmlDocument.LoadXml("<Respuesta />");
+                clsAccesoDato.AgregarParametro("@IdUsuario", SqlDbType.Int, Id);
                 dataTable = clsAccesoDato.ConsultarDataTable();
             }
             catch (Exception exception)
@@ -27,6 +29,7 @@ namespace WebApiRamo.Metodos
             }
             return dataTable;
         }
+
 
         public int GuardaListaCarrito(cl_CarritoCab CarritoCab, ref string numError, ref string msgError)
         {

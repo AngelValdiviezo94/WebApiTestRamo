@@ -170,27 +170,29 @@ namespace WebApiRamo.Utilities
         }
         #endregion
 
-        /*
         #region Carrito 
-        public List<cl_Carrito> ListaCarrito(DataTable dataTable)
+        public cl_CarritoCab ListaCarrito(DataTable dataTable)
         {
-            cl_Carrito ObjCliente = new cl_Carrito();
-            List<cl_Carrito> LstClientes = new List<cl_Carrito>();
+            cl_CarritoCab ObjCarrito = new cl_CarritoCab();
+            List<cl_CarritoDet> LstDet = new List<cl_CarritoDet>();
+            cl_CarritoDet ObjDet = new cl_CarritoDet();
 
             foreach (DataRow row in dataTable.Rows)
             {
-                ObjCliente.Id = Convert.ToInt16(row["Id"].ToString());
-                //ObjCliente.Nombre = row["Nombre"].ToString();
-                //ObjCliente.Activo = Convert.ToBoolean(row["Codigo"].ToString());
+                ObjDet.IdProd = Convert.ToInt16(row["IdProducto"].ToString());
+                
+                ObjDet.NombreProd = row["NombreProducto"].ToString();
+                ObjDet.CodProd = row["CodigoProducto"].ToString();
+                ObjDet.Cantidad = Convert.ToInt16(row["Cantidad"].ToString());
+                ObjDet.PrecioUnitario = Convert.ToDouble(row["PrecioUnitario"].ToString());                
 
-                LstClientes.Add(ObjCliente);
-                ObjCliente = new cl_Carrito();
+                LstDet.Add(ObjDet);
+                ObjDet = new cl_CarritoDet();
             }
-
-            return LstClientes;
-        }
+            ObjCarrito.LstCarritoDet = LstDet;        
+            return ObjCarrito;
+        }        
         #endregion
-        */
 
         public void RegistraLogError(Exception excepcion)
         {

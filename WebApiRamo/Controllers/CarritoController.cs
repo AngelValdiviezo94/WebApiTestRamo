@@ -14,18 +14,17 @@ namespace WebApiRamo.Controllers
         Carrito MetCliente = new Carrito();
         private ConversionClase metodoGenerico = new ConversionClase();
 
-        /*
         [HttpGet]
         [Route("ConsultaCarrito")]
-        public List<cl_Carrito> ConsultaCarrito()
+        public cl_CarritoCab ConsultaCarrito(int id)
         {
-            List<cl_Carrito> LstClientes = new List<cl_Carrito>();
-            cl_Carrito clCanton = new cl_Carrito();
+            List<cl_CarritoCab> LstClientes = new List<cl_CarritoCab>();
+            cl_CarritoCab CarritoCab = new cl_CarritoCab();
             DataTable dataTable = new DataTable();
             RespuestaModelo respuestaModelo = new RespuestaModelo();
             try
             {
-                dataTable = this.MetCliente.ConsultaCarrito();
+                dataTable = this.MetCliente.ConsultaCarrito(id);
                 if (dataTable.Rows.Count <= 0)
                 {
                     respuestaModelo.ProcesoExitoso = false;
@@ -34,17 +33,16 @@ namespace WebApiRamo.Controllers
                 {
                     respuestaModelo.ProcesoExitoso = true;
                     ConversionClase ObjConversionClase = new ConversionClase();
-                    LstClientes = ObjConversionClase.ListaCarrito(dataTable);
+                    CarritoCab = ObjConversionClase.ListaCarrito(dataTable);
                 }
             }
             catch (Exception ex)
             {
-                LstClientes = null;
+                CarritoCab = null;
             }
-            return LstClientes;
+            return CarritoCab;
         }
-        */
-
+        
         [HttpPost]
         [Route("GuardaCarrito")]
         public int GuardaProducto(cl_CarritoCab lstClientes)
