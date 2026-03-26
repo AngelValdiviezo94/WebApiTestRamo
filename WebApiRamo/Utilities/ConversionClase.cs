@@ -8,6 +8,25 @@ namespace WebApiRamo.Utilities
 {
     public class ConversionClase
     {
+        #region Usuario
+        public cl_Usuario UserConvert(DataTable dataTable)
+        {
+            cl_Usuario ObjCliente = new cl_Usuario();
+            //List<cl_Producto> LstClientes = new List<cl_Producto>();
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                ObjCliente.Id = Convert.ToInt16(row["Id"].ToString());
+
+                ObjCliente.Activo = Convert.ToBoolean(row["Activo"].ToString());
+                ObjCliente.UserName = row["UserName"].ToString();                
+                ObjCliente.PassWord = row["PassWord"].ToString();                
+            }
+
+            return ObjCliente;
+        }
+
+        #endregion
         #region Clientes
         public cl_Cliente ObjCliente(DataTable dataTable)
         {

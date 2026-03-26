@@ -48,6 +48,7 @@
     <Compile Include="cl_Producto.cs" />
     <Compile Include="cl_Tipo_Identificacion.cs" />
     <Compile Include="cl_Tipo_Producto.cs" />
+    <Compile Include="cl_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RespuestaModelo.cs" />
   </ItemGroup>
