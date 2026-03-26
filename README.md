@@ -11,3 +11,7 @@ Indicaciones para instalación del proyecto:
 Nota: la base de datos se encuentra en un servidor en la nube, por lo tanto se debe acceder de la forma indicada.
 Para buscar las tablas que se crearon para esta prueba agregar filtros en las tablas y stored procedure para que contenga "RAMO";
 de esta manera se podrá encontrar toda la lógica realizada en el proyecto.
+
+Para pruebas rápidas en el sitio creado, usar las siguientes credenciales:
+user: admin@correo.com
+password: 123
