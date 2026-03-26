@@ -112,9 +112,9 @@ namespace WebApiRamo.Controllers
             return respuestaModelo;
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("EliminaProducto")]
-        public RespuestaModelo EliminaProducto(int idCliente)
+        public RespuestaModelo EliminaProducto(int idProducto)
         {
             string empty = string.Empty;
             string str = string.Empty;
@@ -122,7 +122,7 @@ namespace WebApiRamo.Controllers
             int num = 0;
             try
             {
-                num = this.MetCliente.EliminaProducto(idCliente, ref str, ref empty);
+                num = this.MetCliente.EliminaProducto(idProducto, ref str, ref empty);
                 respuestaModelo.ProcesoExitoso = true;
                 respuestaModelo.Respuesta.Add(num);
             }

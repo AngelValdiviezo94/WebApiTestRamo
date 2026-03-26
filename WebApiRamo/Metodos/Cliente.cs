@@ -71,6 +71,7 @@ namespace WebApiRamo.Metodos
                         xmlElement.SetAttribute("NumIdentificacion", objClient.NumIdentificacion);
                         xmlElement.SetAttribute("Direccion", objClient.Direccion);
                         xmlElement.SetAttribute("Email", objClient.Email);
+                        xmlElement.SetAttribute("IdTipoIdentificacion", objClient.IdTipoIdentificacion + "");
                         xmlElement.SetAttribute("FechaNacimiento", objClient.Fecha_Nacimiento.ToString("yyyy-MM-dd"));
                         xmlElement.SetAttribute("TendenciaCompra", objClient.TendenciaCompra);
                         xmlElement.SetAttribute("Telefono", objClient.Telefono);

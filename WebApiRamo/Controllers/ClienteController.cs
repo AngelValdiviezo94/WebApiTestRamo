@@ -111,7 +111,7 @@ namespace WebApiRamo.Controllers
             return respuestaModelo;
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("EliminaCliente")]
         public RespuestaModelo EliminaCliente(int idCliente)
         {
